@@ -1,0 +1,1 @@
+navbar put a border in every links with animations

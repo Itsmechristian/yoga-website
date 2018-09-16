@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url('./assets/fonts/Quicksand-Regular.otf');
+}
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url('./assets/fonts/Quicksand-Bold.otf');
+}
+@font-face {
+  font-family: 'Quicksand-BoldItalic';
+  src: url('./assets/fonts/Quicksand-BoldItalic.otf');
+}
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url('./assets/fonts/Quicksand-Light.otf');
+}
+@font-face {
+  font-family: 'Quicksand-LightItalic';
+  src: url('./assets/fonts/Quicksand-LightItalic.otf');
+}
+@font-face {
+  font-family: 'Quicksand-Italic';
+  src: url('./assets/fonts/Quicksand-Italic.otf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Quicksand-Regular';
+  color: #333;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333
+}
+
+p {
+  font-family: 'Quicksand-Regular';
+  color: #333
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .container .right {
+  position: relative;
+  top: 15px;
+  height: 40px;
+  width: 40px;
+
+}
+
+.navbar .container .right span {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: #fff;
+  transition: .5 ease-in-out top;
+}
+
+.navbar .container .right span:nth-child(2) {
+  top: 12px;
+}
+
+.navbar .container .right span:nth-child(3) {
+  top: 24px;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.home header {
+  background-size: 1920px;
+  height: 800px;
+  width: 100%;
+}
+
+.home header .container .text {
+  position: relative;
+  width: 60%;
+  top: 35%
+}
+
+.home header .container .text h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.home section.one .button img {
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.home section.one {
+  height: 500px;
+  background: #fff;
+}
+
+.home section.one .container .wrapper{
+  margin: 150px 0;
+}
+
+.home section.one .container .wrapper h1 {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #404044;
+}
+
+.home section.one .container .wrapper h1 span{
+  font-family: "Quicksand-Light";
+}
+
+.home section.one .container .wrapper .button {
+  text-align: center;
+  position: relative;
+  padding: 50px 0px;
+}
+
+.home section.one .container .wrapper .button a img{
+  border: 20px solid #79efb45b;
+}
+
+.home section.two {
+  background: #fafafa;
+  height: auto;
+}
+
+.home section.two .container {
+  padding: 150px 0px;
+}
+
+.home section.two .container .head{
+  padding: 0px 0px 100px 0px;
+}
+
+.home section.two .container .head h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.home section.two .container .rows {
+  display: flex;
+}
+
+.home section.two .container .rows .row {
+  vertical-align: top;
+  position: relative;
+  flex: 1;
+  margin: 0px 20px;
+}
+
+.home section.two .container .rows .row .image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.home section.two .container .rows .row .content {
+  margin: 10px 0;
+}
+
+.home section.two .container .button {
+  width: max-content;
+  margin: 30px auto 0px auto;
+  height: 60px;
+}
+
+.home section.two .container .button a {
+  position: relative;
+  top: 20px;
+  padding: 20px 40px;
+  background: #414145;
+  color: #fff;
+}
+
+.home section.three .container {
+  padding: 150px 0px;
+}
+
+.home section.three .container .head {
+  padding: 0px 0px 100px 0px;
+}
+
+.home section.three .container .head h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.home section.three .container .rows {
+  display: flex;
+}
+
+.home section.three .container .row {
+  flex: 1;
+}
+
+.home section.three .container .row .image img {
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.home section.three .container .row .content {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.home section.three .container .button {
+  width: max-content;
+  margin: 30px auto 0px auto;
+  height: 60px;
+}
+
+.home section.three .container .button a {
+  position: relative;
+  top: 20px;
+  padding: 20px 40px;
+  border: 2px solid #79efb4;
+  background: #fff;
+  color: #414145;
+}
