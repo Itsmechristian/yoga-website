@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './components/common/Navbar';
 import Home from './components/routes/Home';
 import Classes from './components/routes/Classes'
@@ -13,9 +13,11 @@ class App extends Component {
           <BrowserRouter>
             <React.Fragment>
              <Navbar />
+             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/classes" component={Classes} />
-                <Route path="**" component={Notfound} />
+                <Route component={Notfound} />
+              </Switch>
               </React.Fragment>
           </BrowserRouter>
         </div>

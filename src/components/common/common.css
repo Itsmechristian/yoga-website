@@ -1,54 +1,157 @@
 .navbar {
-    width: 100%;
-    padding: 50px 0px;
-    position: absolute;
+  width: 100%;
+  padding: 50px 0px;
+  position: absolute;
 }
 
 .overlay {
-    transition: transform .5s ease-in-out;
-    position: absolute;
-    background: #414043;
-    z-index: 9999;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    transform: scale(0)
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  background: #414043;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transform: scale(0);
 }
 
 .overlay.open-enter-active {
-    transform: scale(1)
+  transform: scale(1);
 }
 .overlay.open-enter-done {
-    transform: scale(1)
+  transform: scale(1);
 }
 .overlay.open-exit-active {
-    transform: scale(0)
+  transform: scale(0);
 }
 .overlay.open-exit-done {
-    transform: scale(0)
+  transform: scale(0);
 }
 
 .overlay .exMark {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    background: #fff;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: #fff;
 }
 
 .overlay ul {
-    position: relative;
-    z-index: 99999;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  position: relative;
+  z-index: 99999;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .overlay ul li {
-    margin: 70px 0px;
+  margin: 70px 0px;
 }
 
 .overlay ul li a {
-    color: #fff;
-    font-size: 3rem;
-    font-family: 'Quicksand-Regular'
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Quicksand-Regular";
+}
+
+.services {
+  background: #fafafa;
+  height: auto;
+}
+
+.services .container {
+  padding: 150px 0px;
+}
+
+.services .container .head {
+  padding: 0px 0px 100px 0px;
+}
+
+.services .container .head h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.services .container .rows {
+  display: flex;
+}
+
+.services .container .rows .row {
+  vertical-align: top;
+  position: relative;
+  flex: 1;
+  margin: 0px 20px;
+}
+
+.services .container .rows .row .image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.services .container .rows .row .content {
+  margin: 10px 0;
+}
+
+.services .container .button {
+  width: max-content;
+  margin: 30px auto 0px auto;
+  height: 60px;
+}
+
+.services .container .button a {
+  position: relative;
+  top: 20px;
+  padding: 20px 40px;
+  background: #414145;
+  color: #fff;
+}
+
+.yogaclasses .container {
+  padding: 150px 0px;
+}
+
+.yogaclasses .container .head {
+  padding: 0px 0px 100px 0px;
+}
+
+.yogaclasses .container .head h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.yogaclasses .container .rows {
+  display: flex;
+}
+
+.yogaclasses .container .row {
+  flex: 1;
+}
+
+.yogaclasses .container .row .image img {
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.yogaclasses .container .row .content {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.yogaclasses .container .button {
+  width: max-content;
+  margin: 30px auto 0px auto;
+  height: 60px;
+}
+
+.yogaclasses .container .button a {
+  position: relative;
+  top: 20px;
+  padding: 20px 40px;
+  border: 2px solid #79efb4;
+  background: #fff;
+  color: #414145;
+}
+
+.pricing {
+  height: auto;
 }

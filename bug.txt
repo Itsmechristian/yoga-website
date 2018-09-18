@@ -1,1 +1,7 @@
 navbar put a border in every links with animations
+add Services Component
+add X logo in navbar
+add Pricing Component
+add Schedule Component
+add Testimonial Component
+add Trainers Component

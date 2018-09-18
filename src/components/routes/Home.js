@@ -1,16 +1,14 @@
+
 import React, { Component } from "react";
+
+// Component
+import Services from '../common/Services';
+import YogaClasses from "../common/YogaClasses";
+
 
 // Images
 import yoga1 from "../../assets/images/yoga1.jpg";
 import playButton from "../../assets/images/playbutton.png";
-import meditation from "../../assets/images/meditation.png";
-import stepper from "../../assets/images/stepper.png";
-import trainers from "../../assets/images/trainers.png";
-import backviewbalance from '../../assets/images/backviewbalance.jpg';
-import aerobics from '../../assets/images/aerobics.jpg';
-import exercise from '../../assets/images/exercise.jpg'
-
-import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
@@ -50,84 +48,12 @@ class Home extends Component {
           </div>
         </section>
         <section className="two">
-          <div className="container">
-            <div className="head">
-              <h1>
-                Explore our services
-              </h1>
-            </div>
-            <div className="rows">
-              <div className="row">
-                <div className="image">
-                  <img src={meditation} alt="meditation" />
-                </div>
-                <div className="content">
-                    <h1 style={{ textAlign: "center"}}>YOGA</h1>
-                    <p style={{ textAlign: "center", lineHeight: 1.8}}>Amet consectetur adipisicing elit. Quae iste ab dolores excepturi fuga placeat aliquam quibusdam deleniti vero cupiditate.</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="image">
-                  <img src={stepper} alt="stepper" />
-                </div>
-                <div className="content">
-                    <h1 style={{ textAlign: "center"}}>Exercise</h1>
-                    <p style={{ textAlign: "center", lineHeight: 1.8}}>Amet consectetur adipisicing elit. Quae iste ab dolores excepturi fuga placeat aliquam quibusdam deleniti vero cupiditate.</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="image">
-                  <img src={trainers} alt="trainers"  height="100" width="100"/>
-                </div>
-                <div className="content">
-                    <h1 style={{ textAlign: "center"}}>Training Programme</h1>
-                    <p style={{ textAlign: "center", lineHeight: 1.8}}>Amet consectetur adipisicing elit. Quae iste ab dolores excepturi fuga placeat aliquam quibusdam deleniti vero cupiditate.</p>
-                </div>
-              </div>
-            </div>
-            <div className="button">
-              <Link to="#">Get in touch</Link>
-            </div>
-          </div>
+          <Services />
         </section>
         <section className="three">
-            <div className="container">
-                <div className="head">
-                  <h1>All in one Yoga classes</h1>
-                </div>
-                <div className="rows">
-                  <div className="row">
-                    <div className="image">
-                        <img src={aerobics} alt="aerobics"/>
-                    </div>
-                    <div className="content">
-                      <h1>Aerobics</h1>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="image">
-                        <img src={backviewbalance} alt="backviewbalance"/>
-                    </div>
-                    <div className="content">
-                        <h1>Yoga Programme</h1>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="image">
-                        <img src={exercise} alt="exercise"/>
-                    </div>
-                    <div className="content">
-                         <h1>Exercise Programme</h1>
-                    </div>
-                  </div>
-                </div>
-                <div className="button">
-                   <Link to="#">Explore our classes</Link>
-                </div>
-            </div>
+          <YogaClasses />
         </section>
         <section className="four">
-          
         </section>
       </div>
     );
