@@ -152,6 +152,92 @@
   color: #414145;
 }
 
+.trainers{
+  padding: 150px 0px;
+  height: auto;
+}
+
+.trainers .container .head {
+  padding: 0px 0px 100px 0px;
+}
+
+.trainers .container .head h1{
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.trainers .container .rows {
+  display: flex;
+}
+
+.trainers .container .rows .row {
+  flex: 1;
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.trainers .container .rows .row .image {
+  margin: 0 auto;
+}
+
+.trainers .container .rows .row .image img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.trainers .container .rows .row .content .name {
+  margin: 20px 0px;
+}
+
+.trainers .container .rows .row .content .name p {
+  line-height: 1.8;
+}
+
+.trainers .container .rows .row .content .button {
+  width: max-content;
+  margin: 30px auto 0px auto;
+  height: 60px;
+}
+
+.trainers .container .rows .row .content a {
+  position: relative;
+  top: 20px;
+  padding: 20px 30px;
+  background: #404044;
+  color: #fff;
+}
+
+.testimonials .container {
+  padding: 100px 0px;
+}
+
+.testimonials .container .head {
+  padding: 0px 0px 100px 0px;
+}
+
+.testimonials .container .head h1{
+  font-size: 2.5rem;
+  text-align: center;
+}
+.testimonials .container .body {
+  overflow: hidden;
+
+}
+
+.testimonials .container .body .slider{
+}
+
+.testimonial {
+  width: 1000px;
+  display: inline-block;
+}
+
+.testimonial .image img{
+  display: block;
+  margin: 0 auto;
+}
+
 .pricing {
   height: auto;
 }

@@ -1,14 +1,16 @@
 
 import React, { Component } from "react";
 
-// Component
+// Components
 import Services from '../common/Services';
 import YogaClasses from "../common/YogaClasses";
+import Testimonial from "../common/Testimonial";
 
 
 // Images
 import yoga1 from "../../assets/images/yoga1.jpg";
 import playButton from "../../assets/images/playbutton.png";
+import Trainers from "../common/Trainers";
 
 class Home extends Component {
 
@@ -54,6 +56,10 @@ class Home extends Component {
           <YogaClasses />
         </section>
         <section className="four">
+          <Trainers />
+        </section>
+        <section className="five">
+          <Testimonial />
         </section>
       </div>
     );

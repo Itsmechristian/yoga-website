@@ -48,6 +48,10 @@ p {
   color: #333
 }
 
+small {
+  color: #c0c0c3;
+}
+
 .container {
   width: 60%;
   margin: 0 auto;
